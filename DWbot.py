@@ -2,8 +2,8 @@ import pyowm
 import telebot
 
 
-owm=pyowm.OWM('70ca04721a29f1a4e36e9b1f0f58829a', language = 'ru')
-bot=telebot.TeleBot("949440384:AAEx9mxvxnwIgIXDyIs5uKn-CMENYUoRmn4")
+owm=pyowm.OWM('API key', language = 'ru')
+bot=telebot.TeleBot("TOKEN")
 
 
 @bot.message_handler(commands=['start', 'help'])
