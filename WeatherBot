@@ -1,0 +1,16 @@
+import pyowm
+
+
+
+# от блокировок
+# from telebot import apihelper
+# apihelper.proxy = {'https':'socks5://127.0.0.1:9050'}
+
+owm=pyowm.OWM('70ca04721a29f1a4e36e9b1f0f58829a', language = 'ru')
+
+
+
+place = input ("Введите в каком городе посмотреть температуру: ")
+observation = own.weather_at_place(place)
+w = observation.get_weather()      
+print (w)
